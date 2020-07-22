@@ -1,4 +1,3 @@
-import { createPlan } from "./plan.js"
 import { createAspargus } from "./seeds/asparagus.js";
 import { addPlant } from "./field.js"
 import { createCorn } from "./seeds/corn.js";
@@ -7,10 +6,9 @@ import { createSoybean } from "./seeds/soybean.js";
 import { createSunflower } from "./seeds/sunflower.js";
 import { createWheat } from "./seeds/wheat.js";
 
-const plantingPlan = createPlan()
+
 
 export const plantSeeds = (yearlyPlantingPlan) => {
-    yearlyPlantingPlan = plantingPlan
 
     yearlyPlantingPlan.forEach(element => {
         element.forEach(foodType => {
