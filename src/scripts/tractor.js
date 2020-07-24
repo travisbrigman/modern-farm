@@ -10,8 +10,8 @@ import { createWheat } from "./seeds/wheat.js";
 
 export const plantSeeds = (yearlyPlantingPlan) => {
 
-    yearlyPlantingPlan.forEach(element => {
-        element.forEach(foodType => {
+    yearlyPlantingPlan.map(element => {
+        element.map(foodType => {
             // see what food type is equal to, whatever it is equal to, invoke the corresponding "create" function and add that seed to the plant array (using addPlant())
             
             if (foodType === "Asparagus") {
