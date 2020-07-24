@@ -1,4 +1,4 @@
-import { createAspargus } from "./seeds/asparagus.js";
+import { createAsparagus } from "./seeds/asparagus.js";
 import { addPlant } from "./field.js"
 import { createCorn } from "./seeds/corn.js";
 import { createPotato } from "./seeds/potato.js";
@@ -15,7 +15,7 @@ export const plantSeeds = (yearlyPlantingPlan) => {
             // see what food type is equal to, whatever it is equal to, invoke the corresponding "create" function and add that seed to the plant array (using addPlant())
             
             if (foodType === "Asparagus") {
-                addPlant(createAspargus())
+                addPlant(createAsparagus())
             } else if (foodType === "Corn") {
                 addPlant(createCorn())
             } else if (foodType === "Potato") {
